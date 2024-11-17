@@ -5,10 +5,9 @@ from email.header import Header
 import argparse
 
 # 邮件发送配置
-SMTP_SERVER = "smtp.example.com"
-SMTP_PORT = 587
-SMTP_USER = "your_email@example.com"
-SMTP_PASS = "your_email_password_or_auth_code"
+SMTP_SERVER = 'smtp.163.com'
+SMTP_USER = '18145536045@163.com'
+SMTP_PASS = 'NCELIPSDQEAGLHLJ'
 
 def send_email(subject, body, receiver_email):
     try:
@@ -32,7 +31,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="发送邮件通知")
     parser.add_argument("--subject", required=True, help="邮件主题")
     parser.add_argument("--body", required=True, help="邮件正文")
-    parser.add_argument("--to", required=True, help="收件人邮箱")
+    parser.add_argument("--to", required=True, help='3261593106@qq.com')
 
     args = parser.parse_args()
     send_email(args.subject, args.body, args.to)
