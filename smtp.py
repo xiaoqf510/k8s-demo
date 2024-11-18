@@ -33,6 +33,13 @@ def send_email(subject, body):
 
 # 测试发送
 if __name__ == "__main__":
-    subject = "Jenkins 流水线构建完成通知"
-    body = "Jenkins 流水线已经成功完成构建，请检查相关部署！"
+    subject = "代码已发布到生产环境"
+    body = (
+        "各位好，\n\n"
+        "代码已经成功发布到生产环境（production）。\n"
+        "请访问以下路由，确认返回内容是否正常：\n"
+        "http://192.168.40.180:31890\n\n"
+        "如有问题请及时反馈！\n\n"
+        "此致，\运维团队"
+    )
     send_email(subject, body)
