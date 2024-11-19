@@ -18,8 +18,8 @@ def send_email(subject, body):
         message['To'] = Header(recipient_email, 'utf-8')
         message['Subject'] = Header(subject, 'utf-8')
 
-        # 邮件正文（HTML 格式）
-        message.attach(MIMEText(body, 'html', 'utf-8'))
+        # 邮件正文
+        message.attach(MIMEText(body, 'plain', 'utf-8'))
 
         # 连接SMTP服务器并发送邮件
         with smtplib.SMTP(smtp_server, 25) as server:
@@ -33,14 +33,11 @@ def send_email(subject, body):
 
 # 测试发送
 if __name__ == "__main__":
-    subject = "代码部署到测试环境确认邮件"
+    subject = "代码部署到生产环境确认邮件"
     body = (
-        """
-        <p>测试同事，您好，</p>
-        <p>开发环境目前测试代码没问题，是否同意部署到测试环境？</p>
-        <p>如果同意，请点击以下链接登录 Jenkins，将代码部署到测试环境：</p>
-        <p>http://192.168.40.180:30002/job/jenkins-harbor</p>
-        <p><br>邮件由开发团队发送</p>
-        """
+        "运维同事，您好，\n\n"
+        "测试环境目前测试代码没问题，是否同意部署到生产环境？\n"
+        "如果同意，请登录 Jenkins，将代码部署到生产环境。\n"
+        "Jenkins 地址：http://192.168.40.180:30002/job/jenkins-harbor\n"
     )
-    send_email(subject, body)
+    send_email(subject, body) 
