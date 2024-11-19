@@ -41,7 +41,7 @@ if __name__ == "__main__":
         <p>如果同意，请点击以下链接登录 Jenkins，将代码部署到生产环境：</p>
         <p><a href="http://192.168.40.180:30002/job/jenkins-harbor" target="_blank">
         http://192.168.40.180:30002/job/jenkins-harbor</a></p>
-        <p>此致，<br>开发团队</p>
+        <p><br>邮件由测试团队发送</p>
         """
     )
     send_email(subject, body)
