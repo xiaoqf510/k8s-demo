@@ -39,8 +39,7 @@ if __name__ == "__main__":
         <p>测试同事，您好，</p>
         <p>开发环境目前测试代码没问题，是否同意部署到测试环境？</p>
         <p>如果同意，请点击以下链接登录 Jenkins，将代码部署到测试环境：</p>
-        <p><a href="http://192.168.40.180:30002/job/jenkins-harbor" target="_blank">
-        Jenkins 地址</a></p>
+        <p>http://192.168.40.180:30002/job/jenkins-harbor</p>
         <p><br>邮件由开发团队发送</p>
         """
     )
