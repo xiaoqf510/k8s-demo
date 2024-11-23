@@ -33,11 +33,11 @@ def send_email(subject, body):
 
 # 测试发送
 if __name__ == "__main__":
-    subject = "代码部署到生产环境确认邮件"
+    subject = "代码部署到测试环境确认邮件"
     body = (
-        "运维同事，您好，\n\n"
-        "测试环境目前测试代码没问题，是否同意部署到生产环境？\n"
-        "如果同意，请登录 Jenkins，将代码部署到生产环境。\n"
+        "测试同事，您好，\n\n"
+        "开发环境目前代码没问题，是否同意部署到测试环境？\n"
+        "如果同意，请登录 Jenkins，将代码部署到生测试环境。\n"
         "Jenkins 地址：http://192.168.40.180:30002/job/jenkins-harbor\n"
     )
     send_email(subject, body) 
