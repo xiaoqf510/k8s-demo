@@ -17,9 +17,6 @@ spec:
       - image: 192.168.40.62/jenkins-demo/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
-        env:
-        - name: branch
-          value: <BRANCH_NAME>
 ---
 apiVersion: v1
 kind: Service
