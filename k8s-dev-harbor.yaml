@@ -1,3 +1,5 @@
+#微信->15011572657
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
