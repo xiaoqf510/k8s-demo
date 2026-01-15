@@ -7,10 +7,10 @@ from email.header import Header
 
 # 邮件发送配置
 smtp_server = 'smtp.163.com'  # SMTP服务器地址
-smtp_from = '18145536045@163.com'  # 发件人邮箱
-smtp_auth_username = '18145536045@163.com'  # 邮箱用户名
-smtp_auth_password = 'NCELIPSDQEAGLHLJ'  # 邮箱授权码
-recipient_email = '3261593106@qq.com'  # 收件人邮箱
+smtp_from = '15573156063@163.com'  # 发件人邮箱
+smtp_auth_username = '15573156063@163.com'  # 邮箱用户名
+smtp_auth_password = 'QFjExRyXdUMCzTGR'  # 邮箱授权码
+recipient_email = '483555203@qq.com'  # 收件人邮箱
 
 def send_email(subject, body):
     try:
